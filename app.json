@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dokku": {
-      "postdeploy": "mv /app/.deploy/wp-config.php /app/public/local-config.php"
+      "predeploy": "cp .deploy/wp-config.php /app/public/local-config.php"
     }
   }
 }

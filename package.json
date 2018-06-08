@@ -1,0 +1,28 @@
+{
+  "name": "wp-mix",
+  "version": "1.0.0",
+  "description": "Install WordPress as a submodule alongside with Laravel mix.",
+  "author": "Carlos Bensant (info@spot.com.do)",
+  "license": "MIT",
+  "repository": "https://github.com/carlosbensant/wp-mix",
+  "main": "public/index.php",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm run production",
+    "start": "npm run watch",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.1.5",
+    "eslint": "^4.19.1",
+    "laravel-mix": "^2.1.11"
+  },
+  "dependencies": {}
+}

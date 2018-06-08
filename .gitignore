@@ -1,0 +1,6 @@
+node_modules/
+.tmp/
+
+public/local-config.php
+# public/wp-content/uploads/*
+# !public/wp-content/uploads/.keep

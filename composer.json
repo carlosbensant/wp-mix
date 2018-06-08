@@ -2,7 +2,7 @@
     "scripts": {
         "post-install-cmd": [
             "chmod -R 777 public/wp-content",
-            "git submodule update --init"
+            "git submodule update --init",
             "mv .deploy/wp-config.php public/local-config.php"
         ]
     },

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dokku": {
-      "postdeploy": "mv .deploy/wp-config.php public/local-config.php"
+      "postdeploy": "mv .deploy/wp-config.php /app/public/local-config.php"
     }
   }
 }

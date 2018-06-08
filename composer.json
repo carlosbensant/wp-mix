@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "post-install-cmd": [
+            "chmod -R 777 public/wp-content",
+            "git submodule update --init",
+        ]
+    },
+    "extra": {
+        "heroku": {
+            "newrelic": "false",
+            "nginx-includes": ["nginx.conf"]
+        }
+    }
+}

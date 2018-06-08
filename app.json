@@ -1,11 +1,7 @@
 {
   "scripts": {
     "dokku": {
-      "postdeploy": [
-        "chmod -R 777 public/wp-content",
-        "git submodule update --init",
-        "mv .deploy/wp-config.php public/local-config.php"
-      ]
+      "postdeploy": "mv .deploy/wp-config.php public/local-config.php"
     }
   }
 }

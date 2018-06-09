@@ -1,7 +1,7 @@
 <?php
 define('DB_NAME', 'wp-demo');
 define('DB_USER', 'mysql');
-define('DB_PASSWORD', 'a0c4f5c1bc9fe520');
+define('DB_PASSWORD', '4cc7d3e4574c4a5a');
 define('DB_HOST', 'dokku-mysql-wp-demo');
 define('WP_DEBUG', true);
 
